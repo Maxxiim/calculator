@@ -1,0 +1,177 @@
+*, 
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+
+body{
+    background: #DAF0FF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main{
+    position: relative;
+}
+
+.calculator{
+    position: relative;
+    background: #F7F8FB;
+    height: 772px;
+    width: 385px;
+    backdrop-filter: blur(51px);
+    border-radius: 39px;
+    padding: 41px 33px 42px 34px;
+}
+
+.calculator__shadow{
+    position: absolute;
+    top: 42px;
+    left: 141px;
+    width: 357px;
+    height: 835px;
+    background: rgba(96, 190, 255, 0.55);
+    filter: blur(61.5px);
+    border-radius: 39px;
+}
+
+.them-btn{
+    background-color: transparent;
+    fill: #858585;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    user-select: none;
+    margin-bottom: 67px;
+    transition: fill .2s ease-in-out;
+}
+
+.darkmode:hover{
+    fill: #F1754E;
+}
+
+.lightmode{
+    display: none;
+}
+
+.screen-values{
+    user-select: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    color: #818181;
+}
+
+.screen-sum{
+    display: none;
+    user-select: none;
+    display: flex;
+    margin-top: 6px;
+    margin-bottom: 95px;
+    justify-content: flex-end;
+    font-size: 48px;
+    line-height: 72px;
+    color: #424242;
+}
+
+.buttons{
+    display: flex;
+    position: absolute;
+    top: 346px;
+    left: 37px;
+}
+
+.buttons__left{
+    display: flex;
+    flex-wrap: wrap;
+    column-count: 3;
+    gap: 20px;
+    max-width: 246px;
+    width: 100%;
+}
+
+.btn{
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 62px;
+    width: 62px;
+    cursor: pointer;
+    background: linear-gradient(129.7deg, rgba(255, 255, 255, 0.6) -9.69%, rgba(255, 255, 255, 0.4) 114.23%);
+    border: 1px solid #FFFFFF;
+    backdrop-filter: blur(6px);
+    border-radius: 16px;
+    color: #38B9FF;
+}
+
+.btn:hover{
+    fill: f000;
+    background: #38B9FF;
+    color: #fff;
+}
+
+.ac{
+    color: #858585;
+}
+
+.backspace{
+    background-color: transparent;
+    fill: #858585;
+    transition: fill ease-in-out;
+}
+
+.backspace:hover{
+    fill: white;
+}
+
+.divide{
+    color: #109DFF;
+    background: #ADE2FF;
+}
+
+.zero{
+    width: 100%;
+    max-width: 144px;
+}
+
+.buttons__right{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.myltiply{
+    fill: #109DFF;
+    
+}
+
+.myltiply:hover{
+    fill: white;
+}
+
+.blue{
+    background: #ADE2FF;
+}
+
+.plus{
+    height: 100%;
+    max-height: 96px;
+}
+
+.equals{
+    color: white;
+    background: #1991FF;
+    height: 100%;
+    max-height: 107px;
+}
